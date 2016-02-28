@@ -116,14 +116,30 @@ footer .sitemap > ul {
 }
 
 /* Add styling for faq page */
-p.questions:first-of-type {
+.questions:first-of-type {
   padding-top: 30px;
 }
 
-p.questions {
+.questions {
   font-style:italic;
 }
 
-p.answers {
+.answers {
   margin-left: 20px;
+}
+
+/* Add styling for signup page */
+form {
+  margin-top: 30px;
+}
+
+form input:not([type=checkbox]) {
+  width: 30%;
+  margin-top:5px;
+  margin-bottom: 10px;
+  font-size: 100%;
+}
+
+form input[type=submit] {
+  margin-top: 20px;
 }
