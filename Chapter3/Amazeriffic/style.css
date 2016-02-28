@@ -1,9 +1,54 @@
 body {
   background: #f9e933;
+  font-family: 'Droid Sans', sans-serif;
+  font-size:100%;
 }
+
+/* Styling all the heading tag font size */
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em;
+  padding-top: 10px;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.7em;
+  padding-top: 10px;
+}
+
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4em;
+  padding-top: 10px;
+}
+
+h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2em;
+  padding-top: 10px;
+}
+
+h5 {
+  font-size: 1.1em;
+  padding-top: 10px;
+}
+
+/* Styling the link anchors */
+a:not(:hover) {
+  color: red;
+  text-decoration: none;
+}
+
+p, ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 
 header, main, footer {
   min-width: 855px;
+  padding:20px;
 }
 
 header .container, main .container, footer .container {
@@ -16,9 +61,13 @@ header {
   overflow: auto;
 }
 
-header h1 {
+header .logo {
   float: left;
   width: 570px;
+  font-size: 2.6em;
+  font-style:italic;
+  font-weight: bold;
+  color: darkred;
 }
 
 header nav {
@@ -49,4 +98,19 @@ footer .left {
 footer .sitemap {
   float: right;
   width: 285px;
+}
+
+/* Styling footer contact */
+footer .contact > p {
+  padding:0px;
+}
+
+footer .contact > p:first-of-type {
+  padding-top: 15px;
+  color: darkred;
+  font-style: italic;
+}
+
+footer .sitemap > ul {
+  padding-top: 15px;
 }
