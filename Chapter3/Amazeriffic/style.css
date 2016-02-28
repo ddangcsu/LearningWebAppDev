@@ -114,3 +114,16 @@ footer .contact > p:first-of-type {
 footer .sitemap > ul {
   padding-top: 15px;
 }
+
+/* Add styling for faq page */
+p.questions:first-of-type {
+  padding-top: 30px;
+}
+
+p.questions {
+  font-style:italic;
+}
+
+p.answers {
+  margin-left: 20px;
+}
