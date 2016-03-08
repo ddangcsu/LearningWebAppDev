@@ -36,7 +36,7 @@ var main = function () {
 
     // Refactoring function to check if an item is even
     function isEven(elt) {
-      return (elt % 2 === 0);
+        return (elt % 2 === 0);
     }
 
     // Exercise 3 - Function to return true if array contains at least 1 even
