@@ -34,34 +34,29 @@ var main = function () {
         return (_.max(arr));
     }
 
+    // Refactoring function to check if an item is even
+    function isEven(elt) {
+      return (elt % 2 === 0);
+    }
+
     // Exercise 3 - Function to return true if array contains at least 1 even
     function exercise3(arr) {
-        var result = arr.some(function (item) {
-            return (item % 2 === 0);
-        });
-        return result;
+        return arr.some(isEven);
     }
 
     // Exercise 3 - Rewritten using underscore.js library
     function _exercise3(arr) {
-        return (_.some(arr, function (elt) {
-            return (elt % 2 === 0);
-        }));
+        return (_.some(arr, isEven));
     }
 
     // Exercise 4 - function to return true if every number is even in array
     function exercise4(arr) {
-        var result = arr.every(function (item) {
-            return (item % 2 === 0);
-        });
-        return result;
+        return arr.every(isEven);
     }
 
     // Exercise 4 - Rewritten using underscore.js library
     function _exercise4(arr) {
-        return (_.every(arr, function (elt) {
-            return (elt % 2 === 0);
-        }));
+        return (_.every(arr, isEven));
     }
 
     // Exercise 5 - function to check if a word contain in array
