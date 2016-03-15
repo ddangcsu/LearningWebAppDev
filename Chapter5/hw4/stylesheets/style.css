@@ -1,0 +1,27 @@
+.statusBarMessage {
+    margin-top: 40px;
+}
+
+.statusMessage {
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.statusSuccess {
+    color: blue;
+}
+
+.statusError {
+    color: red;
+}
+/* To fix issue in firefox where the button is not inline with text field */
+.mdl-textfield {
+    float: left;
+}
+
+.mdl-button--mini-fab {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+/* End fix for firefox */
